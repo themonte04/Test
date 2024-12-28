@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Personnel</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat"; font-weight: bold; text-align: left }
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 300px;background: #faf9fb;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 300px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+.timendate{ 
+ position: relative; 
+ z-index: 1; 
+ top: 0; 
+ left: 0; 
+ } 
+ .transbox{ 
+ position: absolute; 
+ z-index: 2; 
+ top: 0; 
+ left: 0; 
+ } 
+</style>
+
+</head>
+<body class="w3-white">
+
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="https://i.ibb.co/hgVQDPH/IMG-3220.png" style="width:100%">
+  <a href="https://lettest.w3spaces.com/Main.html" class="w3-bar-item w3-button w3-padding-large w3-hover-red">
+    <i class="fa fa-home w3-xxlarge "></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-red">
+    <i class="fa fa-car w3-xxlarge "></i>
+    <p>FLEET</p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-red">
+    <i class="fa fa-book w3-xxlarge "></i>
+    <p>CONTRACT</p>
+  </a>
+  <a href="#calendar" class="w3-bar-item w3-button w3-padding-large w3-hover-red">
+    <i class="fa fa-calendar w3-xxlarge "></i>
+    <p>CALENDAR</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-red">
+    <i class="fa fa-user w3-xxlarge "></i>
+    <p>PERSONNEL</p>
+  </a>  
+
+<style> 
+    .image-container { 
+      position: relative; /* Makes the container the reference point */ 
+      width: 100%; /* Set the width */ 
+      height: 80px; /* Set the height */  
+    } 
+ 
+    .image-container img { 
+      position: absolute; /* Position images within the container */ 
+      top: 0; /* Position image at the top */ 
+      left: 0; /* Position image at the left */ 
+      width: 100%; /* Make the image fill the container width */ 
+      height: 100%; /* Make the image fill the container height */ 
+    } 
+ 
+    .image-container img.second { 
+      opacity: 0.6; /* Make the second image semi-transparent */ 
+      z-index: 1; /* Position the second image above the first one */ 
+    } 
+  </style> 
+
+<body> 
+  <div class="image-container"> 
+     <iframe class="timendate w3-padding-right-16"  src="https://free.timeanddate.com/clock/i9ow1uyb/n230/fn17/tct/pct/ftb/pl0/pr0/pt20/pb0/tt0/tw0/tm1/tb4" frameborder="0" width="106" height="56" allowtransparency="true"></iframe>  
+    <img class="second" src="https://i.ibb.co/rsJfhCL/IMG-3212.png" alt="Image 2"> 
+  </div> 
+</body> 
+
+
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-red">
+    <p>LOG OUT</p>
+  </a>
+
+<!-- Rest of the code -->
+
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-sidebar w3-animate-right w3-xxlarge w3-top w3-#faf9fb w3-hide-large w3-hide-medium" style="display:none;padding-top:0px;right:0;z-index:2" id="myNavbar">
+<a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-transparent w3-xxlarge w3-display-topleft" style="padding:10 10px;">
+ <img src="https://i.ibb.co/MkhkF92/IMG-3225.png" style="width:40px">
+
+  </a>
+
+
+  <div class="w3-bar-block w3-center">
+  <img src="https://i.ibb.co/hgVQDPH/IMG-3220.png" style="width:100%">
+  
+   <br><br>
+  
+    <a href="https://lettest.w3spaces.com/Main.html" class="w3-bar-item w3-button w3-text-black w3-xlarge w3-hover-red" onclick="closeNav()">HOME</a> 
+    <a href="#portfolio" class="w3-bar-item w3-button w3-text-black w3-xlarge w3-hover-red" onclick="closeNav()">FLEET</a>
+    <a href="#about" class="w3-bar-item w3-button w3-text-black w3-xlarge w3-hover-red" onclick="closeNav()">CONTRACT</a>
+    <a href="#calendar" class="w3-bar-item w3-button w3-text-black w3-xlarge w3-hover-red" onclick="closeNav()">CALANDER</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-text-black w3-xlarge w3-hover-red" onclick="closeNav()">PERSONNEL</a>      
+      
+  <img class= "w3-hide-large w3-hide-medium" src="https://i.ibb.co/rsJfhCL/IMG-3212.png" alt="spacer" width="1" height="50">
+        
+              <style> 
+    .image-container { 
+      position: relative; /* Makes the container the reference point */ 
+      width: 100%; /* Set the width */ 
+      height: 80px; /* Set the height */ 
+
+    } 
+ 
+    .image-container img { 
+      position: absolute; /* Position images within the container */ 
+      top: 0; /* Position image at the top */ 
+      left: 0; /* Position image at the left */ 
+      width: 100%; /* Make the image fill the container width */ 
+      height: 100%; /* Make the image fill the container height */ 
+    } 
+ 
+    .image-container img.second { 
+      opacity: 0.6; /* Make the second image semi-transparent */ 
+      z-index: 1; /* Position the second image above the first one */ 
+    } 
+  </style> 
+
+<body> 
+  <div class="image-container"> 
+     <iframe class="timendate"  src="https://free.timeanddate.com/clock/i9ow1uyb/n230/fn17/tct/pct/ftb/pl0/pr0/pt20/pb0/tt0/tw0/tm1/tb4" frameborder="0" width="106" height="56" allowtransparency="true"></iframe>  
+    <img class="second " src="https://i.ibb.co/rsJfhCL/IMG-3212.png" alt="Image 2"> 
+  </div> 
+</body> 
+      
+      
+      <a href="https://lettest.w3spaces.com/Login.html" class=" w3-center w3-bar-item w3-button w3-text-black w3-xlarge w3-hover-red" onclick="closeNav()">LOG OUT</a>
+
+     
+    </div>
+
+  </div>
+
+
+<!-- Menu icon to open sidebar -->
+<span class="w3-button w3-top w3-white w3-hide-large w3-hide-medium w3-xxxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-white" id="home">
+
+    <div class="w3-container w3-white">
+
+<div class="w3-container w3-white">    
+
+<style>
+h4 {text-align: center;}
+</style>
+
+<!-- Team Container -->
+<div class="w3-container w3-padding-32 w3-center" id="team">
+<h2>OUR TEAM</h2>
+
+<div class="w3-row"><br>
+
+<div class="w3-quarter">
+  <img src="https://i.ibb.co/br38VDc/IMG-3213.jpg" alt="CEO" style="width:80%" class="w3-circle w3-hover-opacity">
+  <h4>Yanibel Almonte</h4>
+  <p>Chief Executive Officer</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="https://i.ibb.co/br38VDc/IMG-3213.jpg" alt="COO" style="width:80%" class="w3-circle w3-hover-opacity">
+  <h4>Anabel Almonte</h4>
+  <p>Chief Operating Officer</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="https://i.ibb.co/br38VDc/IMG-3213.jpg" alt="VP" style="width:80%" class="w3-circle w3-hover-opacity">
+  <h4>Jaquelín Jimenz</h4>
+  <p>Vice President</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="https://i.ibb.co/br38VDc/IMG-3213.jpg" alt="CTO" style="width:80%" class="w3-circle w3-hover-opacity">
+  <h4>Marcos Montesino</h4>
+  <p>Chief Technology Officer</p>
+</div>
+
+</div>
+
+<!-- End of Team Container -->
+
+<!-- Work Row -->
+<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
+
+    <img src="https://i.ibb.co/BKX9xW6/IMG-3210.jpg" alt="logo" class="w3-image" width="50%" height="50%">
+
+    </div> 
+  </header>
+</div>
+
+<script>
+// Open and close sidebar
+function openNav() {
+  document.getElementById("myNavbar").style.width = "60%";
+  document.getElementById("myNavbar").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("myNavbar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
